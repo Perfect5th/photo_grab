@@ -1,0 +1,6 @@
+[package]
+name = "photo_grab"
+version = "0.1.0"
+authors = ["perfect5th <mitch.b45@gmail.com>"]
+
+[dependencies]
