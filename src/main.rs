@@ -16,8 +16,6 @@ fn main() {
         let mut dest_path = PathBuf::new();
         dest_path.push("grabbed_photos");
         dest_path.push(file_name);
-        println!("path to copy from {:?}", file_path.as_path());
-        println!("path to copy to {:?}", dest_path.as_path());
         match fs::copy(file_path.as_path(), dest_path) {
             Ok(_) => println!("Successfully copied"),
             Err(e) => panic!("Something went wrong during copy: {}", e),
